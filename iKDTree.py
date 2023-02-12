@@ -1,6 +1,5 @@
 import numpy as np
 from math import sqrt
-from collections import namedtuple
 
 """
 KD树，k-Dimention tree.用来组织数据的树形数据结构，以便快速的查找某些元素。
@@ -76,9 +75,6 @@ class KDTree(object):
         return self.nearest
 
 
-# 最近坐标点、最近距离和访问过的节点数
-# result = namedtuple("Result_tuple", "nearest_point nearest_dist nodes_visited")
-
 data = [[2, 3], [5, 4], [9, 6], [4, 7], [8, 1], [7, 2]]
 kd = KDTree(data)
 
@@ -90,7 +86,7 @@ print(n)
 # [2.0615528128088303 list([5, 4])]
 # [2.692582403567252 list([4, 7])]]
 
-# 小结:
+# python新内容小结:
 # 1、enumerate(list)，同时遍历索引和内容
 # for i , data in enumerate(list):
 #     print(i,data)
